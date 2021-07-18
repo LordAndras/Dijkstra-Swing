@@ -36,10 +36,10 @@ public class Node implements Serializable {
     }
 
     public void paint(Graphics2D g2d) {
-        Graphics2D proba = (Graphics2D) g2d.create();
-        proba.setColor(getColor());
-        proba.fillOval(x, y, RAD, RAD);
-        proba.drawChars(jel, 0, 1, x, y);
+        Graphics2D nodeGraphic2D = (Graphics2D) g2d.create();
+        nodeGraphic2D.setColor(getColor());
+        nodeGraphic2D.fillOval(x, y, RAD, RAD);
+        nodeGraphic2D.drawChars(jel, 0, 1, x, y);
         
     }
 
